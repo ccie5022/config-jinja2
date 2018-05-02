@@ -1,5 +1,11 @@
-hostname;domain_name;management_ip
-switch-a;domain.local;10.0.0.1
-switch-b;domain.local;10.0.0.2
-switch-c;domain.local;10.0.0.3
-switch-d;domain.local;10.0.0.4
+hostname,domain_name,dns_server,ntp_server,admin_user,admin_password,enable,snmp_ro,snmp_rw,tty_password,management_ip,management_gw,vlanIdData,vlanNameData,vlanIdVoice,vlanNameVoice,vlanIdWireless,vlanNameWireless
+sw-1,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-2,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-3,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-4,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-5,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-6,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-7,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-8,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+sw-9,domain.local,8.8.8.8,100.100.1.1,username,password,password,public,private,telnetpass,10.0.0.2,10.0.0.1,10,data,20,voice,100,wifi
+

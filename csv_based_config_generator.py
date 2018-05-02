@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import jinja2
 import os
 
@@ -17,9 +18,9 @@ f.close()
 # limit the possible header values (and therefore the variables)
 print("Convert CSV file to dictionaries...")
 csv_lines = csv_content.splitlines()
-headers = csv_lines[0].split(";")
+headers = csv_lines[0].split(",")
 for i in range(1, len(csv_lines)):
-    values = csv_lines[i].split(";")
+    values = csv_lines[i].split(",")
     parameter_dict = dict()
     for h in range(0, len(headers)):
         parameter_dict[headers[h]] = values[h]
