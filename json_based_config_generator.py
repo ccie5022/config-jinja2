@@ -4,7 +4,7 @@ import os
 
 template_file = "switch_with_vlans.j2"
 json_parameter_file = "parameters.json"
-output_directory = "_output"
+output_directory = "_output_json"
 
 # read the contents from the JSON files
 print("Read JSON parameter file...")

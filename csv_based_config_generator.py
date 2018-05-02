@@ -5,7 +5,7 @@ import os
 template_file = "switch.j2"
 csv_parameter_file = "parameters.csv"
 config_parameters = []
-output_directory = "_output"
+output_directory = "_output_csv"
 
 # 1. read the contents from the CSV files
 print("Read CSV parameter file...")
@@ -18,9 +18,9 @@ f.close()
 # limit the possible header values (and therefore the variables)
 print("Convert CSV file to dictionaries...")
 csv_lines = csv_content.splitlines()
-headers = csv_lines[0].split(",")
+headers = csv_lines[0].split(";")
 for i in range(1, len(csv_lines)):
-    values = csv_lines[i].split(",")
+    values = csv_lines[i].split(";")
     parameter_dict = dict()
     for h in range(0, len(headers)):
         parameter_dict[headers[h]] = values[h]
@@ -43,5 +43,5 @@ for parameter in config_parameters:
     f = open(os.path.join(output_directory, parameter['hostname'] + ".config"), "w")
     f.write(result)
     f.close()
-    print("Configuration '%s' created..." % (parameter['hostname'] + ".config"))
+    print("Configuration '%s' created..." % (parameter["hostname"] + ".config"))
 print("DONE")
